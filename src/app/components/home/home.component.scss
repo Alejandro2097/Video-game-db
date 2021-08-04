@@ -1,0 +1,89 @@
+.filters{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding-left: 20px;
+}
+::ng-deep{
+    .mat-form-field-infix{
+        background-color: #3f51b5;
+    }
+
+    .mat-select-value,
+    .mat-select-arrow,
+    .mat-form-field-hide-placeholder .mat-select-placeholder,
+    .mat-form-field-appearance-legacy .mat-form-field-label{
+        color: #fff;
+        opacity: 1;
+    }
+    .mat-form-field-infix{
+        border-color: #fff !important;
+        border-top: none;
+        padding-left: 5px !important;
+    }
+    .mat-form-field-appearance-legacy .mat-form-field-label{
+        padding-left: 5px;
+    }
+    .mat-form-field-appearance-legacy .mat-form-field-underline{
+        background-color: #fff !important;
+    }
+}
+.games{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.game{
+    background-color: #202020;
+    border-radius: 5px;
+    box-shadow: 4px 3px 8px 0px rgb(213, 57, 237);
+    cursor: pointer;
+    height: 330px;
+    margin: 10px;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    width: 280px;
+    &:hover{
+        box-shadow: 4px 3px 11px 6px rgb(213, 57, 237);
+        transform: translate(-3px);
+    }
+    &-thumb-container{
+        background-color: #000;
+        color: #fff;
+        height: 172px;
+        position: relative;
+        text-align: center;
+    }
+    &-thumbnail{
+        position: absolute;
+        height: 172px;
+        left: 0;
+        margin: 0 auto;
+        right: 0;
+        top: 0;
+    }
+    &-description{
+        display: flex;
+        flex-direction: column;
+        height: 157px;
+        padding: 20px;
+        justify-content: flex-end;
+    }
+    &-name{
+        color: #fff;
+        font-weight: 700;
+        font-size: 22px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    &-platforms{
+        display: flex;
+    }
+    &-platform{
+        margin-right: 20px;
+        margin-right: 10px;
+    }
+}
